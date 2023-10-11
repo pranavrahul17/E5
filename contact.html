@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muro:wght@400&display=swap">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: 
+    linear-gradient(rgba(99, 99, 99, 0.679), rgba(99, 99, 99, 0.679), rgba(99, 99, 99, 0.679)),
+    url(https://plus.unsplash.com/premium_photo-1661953124283-76d0a8436b87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1788&q=80);      background-size: cover;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+     /* background-color: rgba(255, 255, 255, 0.3);  Semi-transparent white background */
+    }
+
+    .contact-heading {
+      font-family: 'Muro';
+      font-size: 70px;
+      margin-bottom: 10px;
+    }
+
+    .contact-description {
+      font-family: Arial, sans-serif;
+      font-size: medium;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .info-block {
+      width: 30%;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.595);
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .contact-form-map-container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    .contact-form {
+      width: 48%; /* Adjust as needed */
+    }
+
+    .form-input {
+      background-color: rgba(255, 255, 255, 0.595);
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: black;
+
+    }
+    ::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+    .message-box {
+      background-color: rgba(255, 255, 255, 0.595);
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.595);
+    }
+
+    .map {
+      width: 47%; /* Adjust as needed */
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-section">
+    <div class="contact-heading">Contact Us</div>
+    <div class="contact-description">
+      <b>Welcome to the heart of [Your Restraunt Name]! Our mission is not only to delight your taste buds but also to create memorable dining experiences. We believe in the power of genuine connections, and we'd love to connect with you.
+
+Whether you have a question about our menu, a dietary preference we should know about, a special request for your upcoming visit, or just want to say hello, our doors are always open. Feel free to reach out to us using the contact details below or through the convenient contact form.
+
+At [Your Restaurant Name], we're more than a place to dine; we're a community of food enthusiasts, and your voice matters. Your feedback and input help shape our culinary offerings and enhance the ambiance we create. We're eager to hear your thoughts, answer your queries, and make your dining experience with us exceptional.</b>
+    </div>
+
+    <div class="contact-info">
+      <div class="info-block">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>Address:</div>
+        <div>Your Address</div>
+      </div>
+
+      <div class="info-block">
+        <i class="fas fa-envelope"></i>
+        <div>Email:</div>
+        <div>example@gmail.com</div>
+      </div>
+
+      <div class="info-block">
+        <i class="fas fa-phone"></i>
+        <div>Phone:</div>
+        <div>+91 9581995506</div>
+      </div>
+    </div>
+
+    <div class="contact-form-map-container">
+      <div class="contact-form">
+        <form>
+          <input type="text" class="form-input" placeholder="Name" required style="color: rgb(252, 159, 0);">
+          <input type="tel" class="form-input" placeholder="Phone" required style="color: rgb(252, 159, 0);">
+          <textarea class="message-box" placeholder="Message" required style="color: rgb(252, 159, 0);"></textarea>
+          <button type="submit" style="background-color: rgba(255, 255, 255, 0.595); color: black;">Submit</button>
+        </form>
+      </div>
+
+      <div class="map">
+        <!-- Embed Google Maps for New York -->
+        <iframe
+          width="100%"
+          height="100%"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61205.0471861483!2d80.64488429999999!3d16.5101648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff9482d944b%3A0x939b7e84ab4a0265!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1696739222111!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

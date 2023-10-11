@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Table Booking</title>
+    <script>
+        function validateForm() {
+            var name = document.forms["bookingForm"]["name"].value;
+            var date = document.forms["bookingForm"]["date"].value;
+            var time = document.forms["bookingForm"]["time"].value;
+            var guests = document.forms["bookingForm"]["guests"].value;
+
+            if (name === "" || date === "" || time === "" || guests === "") {
+                alert("Please fill in all fields");
+                return false;
+            }
+
+            // You can add more validation here as needed, e.g., checking date and time format, minimum guests, etc.
+        }
+    </script>
+</head>
+<body>
+    <h1>Restaurant Table Booking</h1>
+    <form name="bookingForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
